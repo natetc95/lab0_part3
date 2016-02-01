@@ -73,7 +73,7 @@ void __ISR(_CHANGE_NOTICE_VECTOR, IPL4SRS) _CNInterrupt( void ){
         TMR1 = 0;
     }
     if(PORTDbits.RD6 == 1) {
-        if(TMR1 < 2441) {
+        if(TMR1 < 1228) {
             if(stat == led1) stat = led2;
             else if(stat == led2) stat = led3;
             else if(stat == led3) stat = led1;
